@@ -1,0 +1,32 @@
+<header class="global-header wide">
+
+  <nav class="navbar navbar-light bg-light">
+    <ul class="nav justify-content-left">
+      {{!-- <li class="nav-item">
+        <img src="/img/baby.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+      </li>
+      <li class="nav-item">
+        <p class="vertical-center" id="testId">seattle<span class="breadcrumb-arrow">&gt;</span></p>
+      </li> --}}
+    </ul>
+    <ul class="nav justify-content-end">
+      {{#if condition.isNotLogin}}
+      <li class="nav-item">
+        <a href="/login" class="btn btn-default"><span class="fa fa-user"></span> Local Login</a>
+      </li>
+      <li class="nav-item">
+        <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span> Local Signup</a>
+      </li>
+      {{else}}
+      <li class="nav-item">
+        <p>[ logged in as <strong><a class="username" href="/postItem">{{user.username}}</a></strong>]</p>
+      </li>
+      <li class="nav-item">
+        <p>[ <a href="/logout">log out</a>]</p>
+      </li>
+      {{/if}}
+    </ul>
+  </nav>
+
+</header>
+<p>This is user's posting item:use searchByUserName() and add js file to change this page</p>

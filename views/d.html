@@ -1,0 +1,206 @@
+<div class="new-form" id="new-edit">
+      <link type="text/css" rel="stylesheet" media="all" href="//www.craigslist.org/styles/JSONForm.css?v=6bb7678de82b3f8bed79728cb8732c0a">
+      <link type="text/css" rel="stylesheet" media="all" href="//www.craigslist.org/styles/posting-process-edit.css?v=79b2408651780363385208f0cc2099f0">
+      <div class="json-form">
+            <fieldset class="json-form-group-container posting-attributes">
+                  <legend>posting details</legend>
+                  <div class="json-form-group posting-attributes">
+                        <div class="json-form-group json-form-group-container posting-attributes-select">
+                              <label class="json-form-item select employment_type req variant-select">
+                                    <div class="label-wrapper">
+                                          <span class="label">posting title</span>
+                                    </div>
+                                    <label class="input xstreet1 nreq">
+                                          <input class="json-form-input" name="titleNam" value="" tabindex="1" type="text" maxlength="80">
+                                    </label>
+                              </label>
+                              <label class="json-form-item select employment_type req variant-select">
+                                    <div class="label-wrapper">
+                                          <span class="label">price</span>
+                                    </div>
+                                    <label class="input xstreet1 nreq">
+                                          <input class="json-form-input" name="priceNam" value="" tabindex="1" type="text" maxlength="80">
+                                    </label>
+                              </label>
+
+                        </div>
+                  </div>
+            </fieldset>
+            <fieldset class="json-form-group-container contact-info">
+                  <legend>contact info</legend>
+                  <div class="json-form-group contact-info">
+                        <div class="json-form-group json-form-group-container email-form">
+                              <div class="json-form-group json-form-group-container email-form-text-input">
+                                    {{!-- <label class="json-form-item text FromEMail req variant-text">
+                                          <div class="label-wrapper">
+                                                <span class="label">email</span>
+                                          </div>
+                                          <label class="input FromEMail df">
+                                                <input class="json-form-input" name="FromEMail"
+                                                      value="" tabindex="1" type="text"
+                                                      placeholder="Your email address"
+                                                      autocapitalize="off" maxlength="60">
+                                          </label>
+                                    </label> --}}
+                                    <label class="json-form-item text xstreet1 street1 variant-text">
+                                          <div class="label-wrapper">
+                                                <span class="label">posting title</span>
+                                          </div>
+                                          <label class="input xstreet1 nreq">
+                                                <input class="json-form-input" name="xstreet1"
+                                                      value="" tabindex="1" type="text"
+                                                      maxlength="80">
+                                          </label>
+                                    </label>
+                              </div>
+                              <div class="json-form-group json-form-group-container email-privacy">
+                                    <label class="json-form-item select Privacy variant-radio">
+
+                                          <div class="label-wrapper">
+                                                <span class="label">email privacy options</span>
+                                                <a class="help-link" target="_blank" title="how does mail relay work?"
+                                                      href="https://www.craigslist.org/about/help/email-relay">[?]</a>
+
+                                          </div>
+                                          <label class="radio-option">
+                                                <input type="radio" class="json-form-input Privacy"
+                                                      name="Privacy" value="C" checked="" title="craigslist will anonymize your email address">
+                                                <div>
+                                                      <span class="option-label">CL mail relay
+                                                            (recommended)</span>
+                                                </div>
+                                          </label>
+                                          <label class="radio-option">
+                                                <input type="radio" class="json-form-input Privacy"
+                                                      name="Privacy" value="P" title="your actual email address will appear in the posting">
+                                                <div>
+                                                      <span class="option-label">show my real
+                                                            email address</span>
+                                                </div>
+                                          </label>
+                                          <label class="radio-option">
+                                                <input type="radio" class="json-form-input Privacy"
+                                                      name="Privacy" value="A" title="no email address will appear in your posting - be sure to include other contact info!">
+                                                <div>
+                                                      <span class="option-label">no replies to
+                                                            this email</span>
+                                                </div>
+                                          </label>
+                                    </label>
+
+                              </div>
+                        </div>
+                        <fieldset class="json-form-group-container contact-form">
+                              <legend>users can also contact me:</legend>
+                              <div class="json-form-group contact-form">
+                                    <div class="json-form-group json-form-group-container contact-form-booleans">
+                                          <label class="json-form-item boolean contact_phone_ok">
+                                                <input type="checkbox" name="contact_phone_ok"
+                                                      value="1" class="contact_phone_ok">
+
+                                                <div class="label-wrapper">
+                                                      <span class="label">by phone</span>
+                                                </div>
+                                          </label>
+                                          <label class="json-form-item boolean contact_text_ok">
+                                                <input type="checkbox" name="contact_text_ok"
+                                                      value="1" class="contact_text_ok">
+
+                                                <div class="label-wrapper">
+                                                      <span class="label">by text</span>
+                                                </div>
+                                          </label>
+                                    </div>
+                                    <div class="json-form-group json-form-group-container contact-form-text">
+                                          <label class="json-form-item text contact_phone variant-text">
+
+                                                <div class="label-wrapper">
+                                                      <span class="label">phone number</span>
+                                                </div>
+                                                <label class="input contact_phone short-input">
+                                                      <input class="json-form-input" name="contact_phone"
+                                                            value="" tabindex="1" type="text">
+                                                </label>
+                                          </label>
+                                          <label class="json-form-item text contact_phone_extension variant-text">
+
+                                                <div class="label-wrapper">
+                                                      <span class="label">extension</span>
+                                                </div>
+                                                <label class="input contact_phone_extension short-input">
+                                                      <input class="json-form-input" name="contact_phone_extension"
+                                                            value="" tabindex="1" type="text">
+                                                </label>
+                                          </label>
+                                          <label class="json-form-item text contact_name variant-text">
+
+                                                <div class="label-wrapper">
+                                                      <span class="label">contact name</span>
+                                                </div>
+                                                <label class="input contact_name">
+                                                      <input class="json-form-input" name="contact_name"
+                                                            value="" tabindex="1" type="text">
+                                                </label>
+                                          </label>
+                                    </div>
+                              </div>
+                        </fieldset>
+                  </div>
+            </fieldset>
+            <fieldset class="json-form-group-container location-info">
+                  <legend>location info</legend>
+                  <div class="json-form-group location-info">
+                        <label class="json-form-item text xstreet0 street0 variant-text">
+
+                              <div class="label-wrapper">
+                                    <span class="label">street</span>
+                              </div>
+                              <label class="input xstreet0 nreq">
+                                    <input class="json-form-input" name="xstreet0" value=""
+                                          tabindex="1" type="text" maxlength="80">
+                              </label>
+                        </label>
+                        <label class="json-form-item text xstreet1 street1 variant-text">
+
+                              <div class="label-wrapper">
+                                    <span class="label">cross street</span>
+                              </div>
+                              <label class="input xstreet1 nreq">
+                                    <input class="json-form-input" name="xstreet1" value=""
+                                          tabindex="1" type="text" maxlength="80">
+                              </label>
+                        </label>
+                        <label class="json-form-item text city variant-text">
+
+                              <div class="label-wrapper">
+                                    <span class="label">city</span>
+                              </div>
+                              <label class="input city nreq">
+                                    <input class="json-form-input" name="city" value=""
+                                          tabindex="1" type="text" maxlength="80">
+                              </label>
+                        </label>
+                  </div>
+            </fieldset>
+            <div class="json-form-group json-form-group-container permission-checkboxes">
+                  <label class="json-form-item boolean disability_ok">
+                        <input type="checkbox" name="disability_ok" value="1" class="disability_ok"
+                              tabindex="1">
+
+                        <div class="label-wrapper">
+                              <span class="label">ok to highlight this job opening for persons
+                                    with disabilities</span>
+                              <a class="help-link" target="_blank" href="https://www.craigslist.org/about/disabilities">[?]</a>
+
+                        </div>
+                  </label>
+            </div>
+            <div class="json-form-group json-form-group-container submit-buttons">
+                  <div class="submit_button">
+                        <button type="submit" name="go" value="continue" class="go big-button submit-button"
+                              tabindex="1">continue</button>
+                  </div>
+            </div>
+
+      </div>
+</div>

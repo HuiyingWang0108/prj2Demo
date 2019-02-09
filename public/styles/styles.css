@@ -1,0 +1,26 @@
+#indexContainer{
+  padding-top: 5%;
+}
+.list-group-item {
+  line-height: 2.5;
+}
+.vertical-center{
+  /* font-size: 22px;
+  padding-top: 10%;
+  padding-left: 5%; */
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#locationHeader{
+  padding-left: 6%;
+}
+#typeHeader{
+  padding-left: 18%;
+}
+#categoryHeader{
+  padding-left: 30%;
+}
+

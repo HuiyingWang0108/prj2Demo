@@ -1,0 +1,8 @@
+.DS_Store
+node_modules
+npm-debug.log
+.env
+.eslintrc.json
+config/config.json
+public/js/index(d).js
+routes/htmlRoutes(d).js
